@@ -35,9 +35,11 @@ HUMAN 3.0 选择了另一条路：
 This repository contains a Codex skill that can:
 
 - run an adaptive HUMAN 3.0 interview
+- switch between first-assessment mode and ongoing-coach mode
 - assess development across Mind, Body, Spirit, and Vocation
 - identify likely levels, phases, Metatype, and Lifestyle Archetype
 - detect false transformation, regression, and Glitch risk
+- trace specific life problems back to cross-quadrant structural causes
 - produce a direct assessment report in chat
 - ask whether the report should be exported to a Feishu document
 - persist cross-session memory for follow-up consultations
@@ -45,9 +47,11 @@ This repository contains a Codex skill that can:
 这个仓库提供了一个 Codex skill，可以：
 
 - 发起自适应的 HUMAN 3.0 访谈
+- 在“首次评估”和“持续教练”两种模式间切换
 - 评估 Mind、Body、Spirit、Vocation 四大象限
 - 判断可能的发展 level、phase、Metatype 与 Lifestyle Archetype
 - 识别假性转化、回退模式与 Glitch 风险
+- 把具体生活问题追溯到跨象限的结构性根因
 - 直接在对话中输出评估报告
 - 在报告后询问是否导出飞书文档
 - 为后续咨询保留跨会话长期记忆
@@ -149,8 +153,8 @@ The skill is designed around a simple flow:
 
 1. interview one question at a time
 2. map the user's quadrant development
-3. diagnose the real bottleneck
-4. generate a direct report in chat
+3. diagnose the real bottleneck or root cause pattern
+4. generate a direct report or coaching intervention in chat
 5. ask whether to export to Feishu
 6. store memory for future follow-up
 
@@ -158,8 +162,8 @@ The skill is designed around a simple flow:
 
 1. 一次只问一个问题
 2. 映射用户的四象限发展状态
-3. 找出真正的瓶颈问题
-4. 直接在对话里给出完整评估
+3. 找出真正的瓶颈问题或结构性根因
+4. 直接在对话里给出完整评估或教练式干预
 5. 询问是否导出飞书
 6. 保存长期记忆，供后续咨询使用
 
