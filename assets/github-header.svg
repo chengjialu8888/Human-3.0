@@ -1,0 +1,57 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="116" y1="72" x2="1134" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.45" stop-color="#0F2543"/>
+      <stop offset="1" stop-color="#102A56"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="220" y1="138" x2="992" y2="492" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F8CFF"/>
+      <stop offset="0.5" stop-color="#49D6C5"/>
+      <stop offset="1" stop-color="#8F68FF"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1280" height="640" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" rx="32" fill="url(#bg)"/>
+
+  <g filter="url(#blur)" opacity="0.36">
+    <circle cx="217" cy="101" r="122" fill="#3BA7FF"/>
+    <circle cx="1078" cy="174" r="146" fill="#7D5DFF"/>
+    <circle cx="934" cy="561" r="136" fill="#27D4B6"/>
+  </g>
+
+  <rect x="78" y="78" width="1124" height="484" rx="28" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.12"/>
+
+  <path d="M121 468C186 410 273 376 355 382C440 388 495 455 580 458C672 461 718 404 799 364C884 322 982 308 1137 353" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M121 506C217 452 315 442 401 470C475 495 555 548 650 533C738 520 809 457 912 426C989 403 1062 405 1137 431" stroke="white" stroke-opacity="0.14" stroke-width="4" stroke-linecap="round"/>
+
+  <g opacity="0.88">
+    <rect x="124" y="126" width="138" height="34" rx="17" fill="white" fill-opacity="0.1"/>
+    <text x="149" y="149" fill="#C8DAFF" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="1.8">HUMAN 3.0</text>
+  </g>
+
+  <text x="121" y="237" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700">Development Assessor</text>
+  <text x="121" y="297" fill="#B8CCF8" font-family="Arial, Helvetica, sans-serif" font-size="28">A cross-agent assessment and coaching framework for</text>
+  <text x="121" y="337" fill="#B8CCF8" font-family="Arial, Helvetica, sans-serif" font-size="28">Codex, Claude Code, and personal AI agents.</text>
+
+  <g opacity="0.94">
+    <rect x="123" y="398" width="214" height="46" rx="23" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.16"/>
+    <text x="154" y="427" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="20">Four-Quadrant Mapping</text>
+
+    <rect x="357" y="398" width="187" height="46" rx="23" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.16"/>
+    <text x="391" y="427" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="20">Root-Cause Analysis</text>
+
+    <rect x="564" y="398" width="176" height="46" rx="23" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.16"/>
+    <text x="603" y="427" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="20">Longitudinal Memory</text>
+  </g>
+
+  <g opacity="0.82">
+    <text x="122" y="514" fill="#8CD8FF" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2.4">MIND</text>
+    <text x="214" y="514" fill="#8CD8FF" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2.4">BODY</text>
+    <text x="319" y="514" fill="#8CD8FF" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2.4">SPIRIT</text>
+    <text x="439" y="514" fill="#8CD8FF" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2.4">VOCATION</text>
+  </g>
+</svg>
