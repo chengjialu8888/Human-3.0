@@ -1,82 +1,63 @@
 <svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="86" y1="62" x2="1178" y2="602" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F8F1E8"/>
-      <stop offset="0.48" stop-color="#EFE5DA"/>
-      <stop offset="1" stop-color="#E7D8C9"/>
+    <linearGradient id="paper" x1="72" y1="64" x2="1198" y2="604" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F1E9"/>
+      <stop offset="0.52" stop-color="#EEE3D6"/>
+      <stop offset="1" stop-color="#E4D3C3"/>
     </linearGradient>
-    <linearGradient id="panel" x1="158" y1="114" x2="1150" y2="530" gradientUnits="userSpaceOnUse">
-      <stop stop-color="white" stop-opacity="0.82"/>
-      <stop offset="1" stop-color="white" stop-opacity="0.56"/>
+    <linearGradient id="sheet" x1="160" y1="110" x2="1124" y2="536" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF9" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#FFF7EF" stop-opacity="0.62"/>
     </linearGradient>
-    <linearGradient id="ink" x1="186" y1="189" x2="1034" y2="471" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#43352C"/>
-      <stop offset="1" stop-color="#6D5648"/>
+    <linearGradient id="ink" x1="184" y1="194" x2="950" y2="442" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#352820"/>
+      <stop offset="1" stop-color="#6A5447"/>
     </linearGradient>
-    <linearGradient id="accent" x1="258" y1="136" x2="972" y2="484" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#D79A6B"/>
-      <stop offset="0.55" stop-color="#B78468"/>
-      <stop offset="1" stop-color="#8C6B7B"/>
-    </linearGradient>
-    <filter id="softBlur" x="0" y="0" width="1280" height="640" filterUnits="userSpaceOnUse">
-      <feGaussianBlur stdDeviation="58"/>
-    </filter>
-    <filter id="shadow" x="110" y="96" width="1080" height="456" filterUnits="userSpaceOnUse">
-      <feOffset dy="16"/>
-      <feGaussianBlur stdDeviation="24"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0.31 0 0 0 0 0.23 0 0 0 0 0.18 0 0 0 0.12 0"/>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(254 114) rotate(32) scale(226 152)">
+      <stop stop-color="#F1C8A7"/>
+      <stop offset="1" stop-color="#F1C8A7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1028 176) rotate(18) scale(242 166)">
+      <stop stop-color="#CBA8AE"/>
+      <stop offset="1" stop-color="#CBA8AE" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="110" y="90" width="1084" height="470" filterUnits="userSpaceOnUse">
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="26"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.26 0 0 0 0 0.2 0 0 0 0 0.16 0 0 0 0.12 0"/>
       <feBlend in2="SourceGraphic" result="shape"/>
     </filter>
   </defs>
 
-  <rect width="1280" height="640" rx="32" fill="url(#bg)"/>
-
-  <g filter="url(#softBlur)" opacity="0.34">
-    <circle cx="204" cy="108" r="132" fill="#F5C7A1"/>
-    <circle cx="1074" cy="152" r="164" fill="#C9A3A6"/>
-    <circle cx="984" cy="552" r="140" fill="#D4B49E"/>
-  </g>
+  <rect width="1280" height="640" rx="32" fill="url(#paper)"/>
+  <ellipse cx="254" cy="114" rx="226" ry="152" fill="url(#glowA)" opacity="0.55"/>
+  <ellipse cx="1028" cy="176" rx="242" ry="166" fill="url(#glowB)" opacity="0.58"/>
 
   <g filter="url(#shadow)">
-    <rect x="142" y="112" width="996" height="392" rx="28" fill="url(#panel)"/>
-    <rect x="142.75" y="112.75" width="994.5" height="390.5" rx="27.25" stroke="#F3E5D7" stroke-opacity="0.74" stroke-width="1.5"/>
+    <rect x="146" y="108" width="988" height="398" rx="26" fill="url(#sheet)"/>
+    <rect x="146.75" y="108.75" width="986.5" height="396.5" rx="25.25" stroke="#F0E1D2" stroke-opacity="0.8" stroke-width="1.5"/>
   </g>
 
-  <path d="M857 121C930 170 981 258 978 352C975 430 942 486 891 533" stroke="#D8C1AF" stroke-width="2" stroke-opacity="0.78"/>
-  <path d="M234 471C317 427 377 381 439 315C481 271 535 215 613 181C716 135 820 146 922 210" stroke="url(#accent)" stroke-width="4.5" stroke-linecap="round" stroke-opacity="0.72"/>
-  <path d="M260 503C383 492 477 458 547 411C610 369 666 307 735 278C797 252 862 248 947 281" stroke="#BDA18E" stroke-width="2.2" stroke-linecap="round" stroke-opacity="0.6"/>
+  <path d="M848 120C910 168 952 244 954 324C956 406 928 476 879 528" stroke="#D2BEAF" stroke-width="1.8" stroke-opacity="0.75"/>
+  <path d="M228 468C300 438 354 396 418 325C469 268 530 212 609 180C707 141 804 149 905 206" stroke="#BE8E74" stroke-width="4.2" stroke-linecap="round" stroke-opacity="0.66"/>
+  <path d="M247 507C373 490 466 452 535 406C596 366 652 313 721 284C784 258 849 253 928 282" stroke="#B89B8B" stroke-width="2" stroke-linecap="round" stroke-opacity="0.58"/>
 
   <g opacity="0.94">
-    <rect x="196" y="156" width="148" height="34" rx="17" fill="#F5E7DA"/>
-    <text x="222" y="179" fill="#7D6152" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="1.8">HUMAN 3.0</text>
+    <text x="194" y="173" fill="#8A6956" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="3.2">HUMAN 3.0</text>
+    <line x1="334" y1="164" x2="426" y2="164" stroke="#D9C3B3" stroke-width="1.5"/>
   </g>
 
-  <text x="195" y="254" fill="url(#ink)" font-family="Georgia, 'Times New Roman', serif" font-size="67" font-weight="700">Development Assessor</text>
-  <text x="196" y="307" fill="#7D6658" font-family="Arial, Helvetica, sans-serif" font-size="26">A warm, reflective framework for mapping growth across</text>
-  <text x="196" y="343" fill="#7D6658" font-family="Arial, Helvetica, sans-serif" font-size="26">Mind, Body, Spirit, and Vocation.</text>
+  <text x="191" y="258" fill="url(#ink)" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700">Development Assessor</text>
+  <text x="194" y="311" fill="#776256" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-style="italic">A reflective framework for self-discovery,</text>
+  <text x="194" y="347" fill="#776256" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-style="italic">clarity, and long-range human growth.</text>
 
-  <g opacity="0.97">
-    <rect x="196" y="390" width="180" height="44" rx="22" fill="#F6EADF" stroke="#E7D6C6"/>
-    <text x="228" y="417" fill="#6E5649" font-family="Arial, Helvetica, sans-serif" font-size="19">Adaptive Interview</text>
+  <text x="194" y="418" fill="#8A7062" font-family="Arial, Helvetica, sans-serif" font-size="19" letter-spacing="1">Mind  •  Body  •  Spirit  •  Vocation</text>
+  <text x="194" y="451" fill="#9C7E6D" font-family="Arial, Helvetica, sans-serif" font-size="18">Adaptive interviews, root-cause insight, and longitudinal memory.</text>
 
-    <rect x="392" y="390" width="168" height="44" rx="22" fill="#F6EADF" stroke="#E7D6C6"/>
-    <text x="427" y="417" fill="#6E5649" font-family="Arial, Helvetica, sans-serif" font-size="19">Root-Cause Insight</text>
-
-    <rect x="576" y="390" width="190" height="44" rx="22" fill="#F6EADF" stroke="#E7D6C6"/>
-    <text x="605" y="417" fill="#6E5649" font-family="Arial, Helvetica, sans-serif" font-size="19">Longitudinal Memory</text>
-  </g>
-
-  <g opacity="0.92">
-    <text x="197" y="465" fill="#A47C67" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2.4">MIND</text>
-    <text x="286" y="465" fill="#A47C67" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2.4">BODY</text>
-    <text x="390" y="465" fill="#A47C67" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2.4">SPIRIT</text>
-    <text x="507" y="465" fill="#A47C67" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2.4">VOCATION</text>
-  </g>
-
-  <g opacity="0.5">
-    <path d="M916 195C873 198 836 222 814 259C791 299 786 351 801 398C817 447 848 486 893 510" stroke="#A98878" stroke-width="2"/>
-    <path d="M873 218C852 224 836 238 825 258C807 290 802 337 811 377C821 420 845 454 878 477" stroke="#A98878" stroke-width="1.5"/>
-    <path d="M863 267C875 268 887 274 894 287C902 302 903 319 899 334C894 352 882 365 867 372" stroke="#A98878" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M852 391C869 403 892 410 916 408" stroke="#A98878" stroke-width="1.5" stroke-linecap="round"/>
+  <g opacity="0.46">
+    <path d="M906 191C868 197 835 222 816 257C796 292 793 337 804 381C817 430 847 473 890 501" stroke="#9F8072" stroke-width="1.9"/>
+    <path d="M871 214C853 220 839 233 828 251C813 276 806 313 809 350C813 398 837 444 873 473" stroke="#9F8072" stroke-width="1.4"/>
+    <path d="M861 266C875 268 887 273 895 284C904 298 906 315 903 330C899 347 888 360 874 367" stroke="#9F8072" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M855 391C875 402 899 407 925 404" stroke="#9F8072" stroke-width="1.4" stroke-linecap="round"/>
   </g>
 </svg>
