@@ -1,0 +1,4 @@
+interface:
+  display_name: "HUMAN 3.0 Assessment"
+  short_description: "Assess HUMAN 3.0 development"
+  default_prompt: "Use $human-3-development-assessor to assess someone's development across the HUMAN 3.0 quadrants and produce an actionable growth plan."
