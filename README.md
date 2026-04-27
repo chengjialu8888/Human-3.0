@@ -6,6 +6,8 @@
 
 [![Repo](https://img.shields.io/badge/GitHub-Human--3.0-111827?logo=github)](https://github.com/chengjialu8888/Human-3.0)
 [![Skill](https://img.shields.io/badge/Codex-Skill-2563eb)](./SKILL.md)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-d97706)](./README.md)
+[![Agent Ready](https://img.shields.io/badge/Personal%20Agents-Compatible-7c3aed)](./README.md)
 [![Bilingual](https://img.shields.io/badge/README-中文%20%2F%20English-059669)](./README.md)
 
 ## In One Sentence | 一句话说明
@@ -91,6 +93,7 @@ This repository contains a Codex skill that can:
 - produce a direct assessment report in chat
 - ask whether the report should be exported to a Feishu document
 - persist cross-session memory for follow-up consultations
+- adapt to different agent runtimes such as Codex, Claude Code, and other personal AI agents
 
 这个仓库提供了一个 Codex skill，可以：
 
@@ -103,6 +106,45 @@ This repository contains a Codex skill that can:
 - 直接在对话中输出评估报告
 - 在报告后询问是否导出飞书文档
 - 为后续咨询保留跨会话长期记忆
+- 根据运行环境适配到 Codex、Claude Code 或其他个人 agent
+
+## Compatibility | 兼容性
+
+This project is written to be agent-compatible, not Codex-only.
+
+It works best when an agent can:
+
+- follow a long-form system or skill prompt
+- ask one question at a time
+- maintain session context
+- optionally store memory between sessions
+- optionally export or save reports
+
+That means the framework is a good fit for:
+
+- Codex skills
+- Claude Code workflows
+- custom personal agents
+- memory-enabled chat agents
+- local or hosted coaching assistants
+
+这个项目的设计目标并不是“只能跑在 Codex 上”，而是“可被多种 agent 使用”。
+
+它最适合具备这些能力的 agent：
+
+- 能遵循较长的 system prompt / skill prompt
+- 能一次只问一个问题
+- 能维持会话上下文
+- 最好支持跨会话记忆
+- 最好支持保存或导出报告
+
+所以它天然适配：
+
+- Codex skills
+- Claude Code 工作流
+- 自定义 personal agent
+- 带记忆的聊天 agent
+- 本地或托管式咨询助手
 
 ## Typical Use Cases | 典型使用场景
 
@@ -222,6 +264,70 @@ Example intent examples:
 
 - `Use $human-3-development-assessor to run a first HUMAN 3.0 assessment.`
 - `Use $human-3-development-assessor to continue my follow-up consultation and retrieve prior memory first.`
+
+### 4. Use it in Claude Code | 在 Claude Code 中使用
+
+In Claude Code, you can use the framework in either of these ways:
+
+1. Put the contents of [SKILL.md](./SKILL.md) into your working prompt or agent instruction set.
+2. Keep the `references/` files alongside it so Claude can read the knowledge base, report template, memory workflow, and coaching patterns when needed.
+
+Suggested setup:
+
+- `SKILL.md` as the primary behavior prompt
+- `references/human-3-model.md` as the theory layer
+- `references/assessment-template.md` as the output contract
+- `references/session-memory.md` as the continuity layer
+- `references/coaching-patterns.md` as the live-problem coaching layer
+
+在 Claude Code 里，推荐两种使用方式：
+
+1. 把 [SKILL.md](./SKILL.md) 的内容放进你的工作提示词或 agent 指令集。
+2. 把 `references/` 目录一起保留，让 Claude 在需要时读取知识库、报告模板、记忆工作流和教练模式。
+
+推荐映射方式：
+
+- `SKILL.md` 负责主行为
+- `references/human-3-model.md` 负责理论层
+- `references/assessment-template.md` 负责输出格式
+- `references/session-memory.md` 负责持续记忆
+- `references/coaching-patterns.md` 负责问题教练
+
+### 5. Use it in Other Personal Agents | 在其他个人 Agent 中使用
+
+If you are building your own agent stack, the easiest way to adopt HUMAN 3.0 is:
+
+1. treat [SKILL.md](./SKILL.md) as the main orchestration prompt
+2. load the `references/` files on demand instead of stuffing everything into one giant prompt
+3. map the memory workflow to your own storage layer
+4. map Feishu export to your own document or note-taking tool if Feishu is unavailable
+
+The framework itself is portable. The tool layer is replaceable.
+
+如果你在搭自己的 personal agent，最简单的接入方式是：
+
+1. 把 [SKILL.md](./SKILL.md) 当作主编排 prompt
+2. 把 `references/` 当作按需加载的知识层，而不是一股脑塞进一个超长 prompt
+3. 把长期记忆流程映射到你自己的存储层
+4. 如果没有飞书，就把导出动作替换成你自己的文档系统或笔记系统
+
+框架本身是可迁移的，工具层是可替换的。
+
+## Runtime Behavior by Environment | 不同环境下的运行差异
+
+Different agents will support different parts of the workflow:
+
+- In Codex: native skill structure and local file references work well.
+- In Claude Code: prompt orchestration and local project references work well.
+- In custom agents: memory and export behavior depend on your own toolchain.
+- In plain chat interfaces: the assessment still works, but persistent memory and exports may need manual handling.
+
+不同 agent 环境支持的能力会不同：
+
+- 在 Codex 中：skill 结构和本地引用最顺手。
+- 在 Claude Code 中：prompt 编排和本地项目文件引用最顺手。
+- 在自定义 agent 中：记忆和导出取决于你自己的工具链。
+- 在纯聊天界面中：评估仍然能跑，但长期记忆和导出通常需要手动接管。
 
 ## Example Experience | 使用体验示例
 
