@@ -88,6 +88,21 @@ People usually come to this project in one of these states:
 - `I use AI heavily and want to know whether it's helping me grow or making me weaker.`
 - `I want a coaching system that remembers what I said last time.`
 
+## Discovery Terms
+
+People searching for projects like this often use terms such as:
+
+- AI self-discovery prompt
+- HUMAN 3.0 prompt
+- metatype test
+- four-quadrant assessment
+- AI life coach prompt
+- personal growth framework for Claude Code
+- Codex coaching skill
+- personal agent with memory
+
+If that is what you are looking for, this repository is designed to be directly reusable, not just inspirational reading.
+
 ## What Makes It Different
 
 ### 1. It does not chase balance for its own sake
@@ -232,6 +247,16 @@ This project is interesting not only as a self-development artifact, but also as
 
 `A HUMAN 3.0 assessment and coaching framework for Codex, Claude Code, and personal AI agents: adaptive four-quadrant interviews, root-cause analysis, and cross-session memory for longitudinal growth.`
 
+## Repository Settings To Improve Manually
+
+These cannot be fully controlled from repo files alone, but they will materially improve discovery and conversion on GitHub:
+
+1. Add focused topics such as `ai-coaching`, `self-discovery`, `personal-growth`, `prompt-engineering`, `claude-code`, `codex`, `ai-agent`, `memory`, `metatype`, and `life-coach`.
+2. Paste the suggested GitHub description into the repo "About" field.
+3. Upload `assets/github-header.svg` or a PNG export as the GitHub social preview image.
+4. Pin the repo on your profile if this is a flagship project.
+5. Add an external link in the repo "Website" field if you later publish a demo page, article, or landing page.
+
 ## Contributing
 
 Good future improvements could include:
@@ -240,6 +265,7 @@ Good future improvements could include:
 - Feishu export automation when tools are available
 - stronger privacy controls for persistent memory
 - agent-specific setup presets
+- issue templates and contributor onboarding improvements
 
 ## Final Note
 
