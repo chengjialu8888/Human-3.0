@@ -8,6 +8,24 @@
 [![Skill](https://img.shields.io/badge/Codex-Skill-2563eb)](./SKILL.md)
 [![Bilingual](https://img.shields.io/badge/README-中文%20%2F%20English-059669)](./README.md)
 
+## In One Sentence | 一句话说明
+
+HUMAN 3.0 is a Codex skill for people who do not just want comfort, productivity hacks, or personality labels. It gives them a structural map of what is actually driving their growth, stagnation, and self-deception.
+
+HUMAN 3.0 是一个给“不满足于安慰、效率技巧、人格标签”的人准备的 Codex skill。它试图给出的是结构性地图，告诉你真正驱动成长、停滞和自我欺骗的到底是什么。
+
+## Why It Hooks Attention | 为什么它容易让人停下来读
+
+- It combines assessment and coaching instead of stopping at diagnosis.
+- It treats AI as a developmental force, not just a utility.
+- It is built for longitudinal use with cross-session memory.
+- It is willing to identify false transformation, not just repeat nice-sounding insights.
+
+- 它不是只做评估，而是把评估和持续教练连在一起。
+- 它把 AI 当成发展变量，而不只是效率工具。
+- 它天然支持跨会话长期记忆，适合长期陪伴式使用。
+- 它敢于识别“假性成长”，而不是只输出听起来正确的话。
+
 ## Why This Project Exists | 为什么会有这个项目
 
 Most self-development systems are either too vague to act on, too spiritual to operationalize, or too productivity-driven to tell the truth about what is actually broken.
@@ -56,6 +74,22 @@ This repository contains a Codex skill that can:
 - 在报告后询问是否导出飞书文档
 - 为后续咨询保留跨会话长期记忆
 
+## Typical Use Cases | 典型使用场景
+
+People usually come to this project in one of these states:
+
+- `I want a real developmental assessment, not another personality quiz.`
+- `I keep having the same life problem in different forms.`
+- `I use AI heavily and want to know whether it's helping me grow or making me weaker.`
+- `I want a coaching system that remembers what I said last time.`
+
+用户通常会带着这些状态来到这里：
+
+- `我想做一个真正的发展评估，不想再做人格测试。`
+- `我总是在不同人生问题里重复同一个模式。`
+- `我高频使用 AI，想知道它是在帮助我成长，还是让我变弱。`
+- `我想要一个记得我上次说过什么的教练系统。`
+
 ## What Makes It Different | 它和别的评估工具有什么不同
 
 ### 1. It does not chase balance for its own sake
@@ -81,6 +115,26 @@ The first session creates a baseline. Later sessions are meant to retrieve that 
 Most self-improvement tools treat AI as neutral or obviously beneficial. This project treats AI as a meta-Glitch: powerful, useful, and potentially destabilizing if used without foundation.
 
 很多成长工具把 AI 当成中性工具，甚至天然利好。本项目把 AI 当作 `meta-Glitch` 来看待：它很强，但如果基础不够，也可能让人外包思考、制造能力幻觉、甚至失去现实锚点。
+
+## What You Actually Get | 最终用户真正会得到什么
+
+Instead of vague reflection, the user gets:
+
+- a four-quadrant diagnosis
+- a likely Metatype and Lifestyle Archetype
+- a named root problem
+- a concrete 30/90/180-day strategy
+- a warning about likely regression and self-sabotage
+- a continuity layer for future sessions
+
+用户拿到的不是泛泛反思，而是：
+
+- 一份四象限诊断
+- 一个可能的 Metatype 与 Lifestyle Archetype
+- 一个被点名的核心问题
+- 一个具体到 30/90/180 天的行动方案
+- 一组关于回退与自我破坏的预警
+- 一套可持续跟进的记忆层
 
 ## Who It Is For | 适合谁
 
@@ -133,6 +187,36 @@ Example intent examples:
 - `Use $human-3-development-assessor to run a first HUMAN 3.0 assessment.`
 - `Use $human-3-development-assessor to continue my follow-up consultation and retrieve prior memory first.`
 
+## Example Experience | 使用体验示例
+
+What makes this project feel different is not just the framework. It is the interaction pattern:
+
+1. it asks one question at a time
+2. it notices contradictions
+3. it traces surface pain to structural causes
+4. it gives a direct report in chat
+5. it remembers what happened next time
+
+这个项目真正拉开差距的，不只是框架本身，而是它的交互方式：
+
+1. 一次只问一个问题
+2. 会抓住前后矛盾
+3. 会把表层痛点追到结构性根因
+4. 直接在对话里给出完整报告
+5. 下次继续时还能记得你
+
+Example shift:
+
+- Surface problem: `I can't stick to my habits.`
+- Structural reading: `Your Body failure is being driven by Spirit depletion and a Mind-level knowing-doing split.`
+- Next action: `Rebuild one tiny physical practice that survives emotional chaos before touching bigger optimization goals.`
+
+示例转化：
+
+- 表层问题：`我总是坚持不了习惯。`
+- 结构判断：`你的身体执行失败，背后其实是精神耗竭和心智层面的知行断裂。`
+- 下一步动作：`先重建一个在情绪混乱里也能活下来的微型身体实践，再谈更大的优化目标。`
+
 ## Repository Structure | 仓库结构
 
 ```text
@@ -143,6 +227,8 @@ Example intent examples:
 ├── memory/
 │   └── .gitkeep
 └── references/
+    ├── assessment-template.md
+    ├── coaching-patterns.md
     ├── human-3-model.md
     └── session-memory.md
 ```
@@ -177,6 +263,18 @@ If you're building the next generation of AI-native coaching, reflective systems
 - memory-based AI consultation
 - risk-aware human augmentation
 
+This makes it interesting not only as a self-development artifact, but also as:
+
+- a design pattern for AI coaching systems
+- a memory-aware advisory workflow
+- a case study in turning abstract philosophy into operational prompts
+
+所以它不只是一个成长类项目，也可以被当成：
+
+- AI 教练系统的设计样本
+- 带记忆咨询工作流的参考实现
+- 把抽象哲学压缩成可执行 prompt 的案例
+
 如果你在做下一代 AI 原生咨询系统、反思系统或成长工具，这个项目值得关注，因为它同时处在这些交叉点上：
 
 - 发展心理学
@@ -189,11 +287,11 @@ If you're building the next generation of AI-native coaching, reflective systems
 
 You can use this as the repository description on GitHub:
 
-`A HUMAN 3.0 assessment skill for Codex: adaptive four-quadrant development interviews, direct reports, Feishu export prompts, and cross-session memory for longitudinal coaching.`
+`A HUMAN 3.0 assessment and coaching skill for Codex: adaptive four-quadrant interviews, root-cause analysis, direct reports, and cross-session memory for longitudinal growth.`
 
 你可以把这句作为 GitHub 仓库描述：
 
-`一个用于 Codex 的 HUMAN 3.0 评估 skill：支持四象限自适应访谈、直接生成评估报告、飞书导出追问，以及面向长期咨询的跨会话记忆。`
+`一个用于 Codex 的 HUMAN 3.0 评估与教练 skill：支持四象限自适应访谈、根因分析、直接生成报告，以及面向长期成长的跨会话记忆。`
 
 ## Contributing | 欢迎完善
 
